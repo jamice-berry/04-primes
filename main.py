@@ -4,8 +4,19 @@ from math import sqrt
 
 
 def isprime(p):
+    if(p<= 0):
+        return False
+    
+    a = p/2+1
+    for i in range(2,p//2 +1):
+        if(p%i == 0):
+            print(f"{p} = {i} x {p // i} : False")
+            return False
+            
+        
+    print (p, ": True")
+    return True
 
-    # votre code ici
 
     pass
 
